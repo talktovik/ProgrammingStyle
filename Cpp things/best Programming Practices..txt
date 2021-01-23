@@ -1,0 +1,96 @@
+1. avoid use float or double in a Conditional statement,because it actually take more time than 
+normal.
+
+2. Using Ternery operator will actually reduce lines of code.
+
+3. The statement like x = (y = 4 , y = y +1 ); is using comma operator.
+at end x will get the same value as y+1.
+
+4. Using Ternary operator like a pro bool ? function1() : function2(); 
+
+5. [The Power of comma operator and for loop] by the help of comma operator 
+ we can actually initialize more than one variables in the for loop and set 
+appropriate conditions to check like: for( x=0, y= 0 , x+y <100 , x = x+1)
+
+6. A very cool String Manupulation Example from the book.
+
+Void function (char * targ, char* src) {
+int i, j;
+printf("%s\n", targ);
+
+for(i =0 , j = strlen(src); i <= j; i++ ,j++){
+
+targ[i] = src [i];
+targ[j] = src [j];
+
+printf("%s\n",targ);
+
+}
+
+7.This Code is mostly we can use while giving our user 3 chances to get the password right ;
+
+
+void sign_in(void){
+char str[20] = "";
+int x ;
+
+for(x = 0; x <3 && strcmp(str, "password"); x++){
+printf("enter your password:");
+gets(str);
+
+}
+
+
+gets() === Reads characters from the standard input (stdin) and stores them as a C string 
+into str until a newline character or the end-of-file is reached.
+
+8. for( ; ; ) This is a infinite loop.
+
+9. Loops with No bodies = for( ; str* == " "; str++) ; this is a no body loop thus it have 
+the value in certain algorithms.
+Time delay loops are often used in programs. These are loops that have no other function than to kill time. 
+Delay loops can be created by specifying an empty target statement.
+
+
+10. The Historic Do while loop. 
+SYNTAX :
+  do {
+ statement; 
+} while (consition);
+
+11. Error making thing, A variable initialized inside statement of loop would be local to that loop.
+
+
+12. The Jump statements {continue, break, return ,goto}
+
+13. The function kbhit() returns zero if non of the key is hit. found in "conio.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
