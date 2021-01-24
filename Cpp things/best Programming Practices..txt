@@ -65,6 +65,14 @@ SYNTAX :
 
 13. The function kbhit() returns zero if non of the key is hit. found in "conio.h"
 
+13. C/C++ has no bound checking on array so its sort of our job to think about this manually. 
+like if you are declaring an array like int a[10]; and then doing this ---
+for (i = 0 ; i > =100 : i ++)
+	a[i] = i; Then the compliler won't force error. So you gave to look it manually.
+
+
+14. 
+
 
 
 
