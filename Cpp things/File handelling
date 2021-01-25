@@ -1,0 +1,76 @@
+// File Handeling in Cpp
+
+File is used to store data for permanent purpose.
+
+A stream is an abstraction that represents a device on which input and output operations are performed.
+
+A stream can be basically be represented as a source or destination of characters of indefinite length. 
+
+//abstract data........................
+
+ios --> istream
+ios --> ostream
+istream + ostream --> iostream 
+
+istream --> ifstream 
+ostream --> ofstream 
+
+iostream + istream + ostream --> fstream
+
+so this fstream  header file actually have istream for taking input from the file and ostream for sending output to the file.
+
+
+Note Consider istream, ostream and fstream as the classes means user defined data types they just help to serve the purpose we have i.e, File handeling. 
+........................................ 
+_____________________________________________________________________
+
+//[+] file Write opearation [+]
+
+
+void file_handle(){
+    // Lets take the user name as input and do something with that.
+    char arr[100];
+    std::cout << "Enter your name"<< std::endl;
+    std::cin.getline(arr, 100);
+    std::ofstream the_file("db.txt");
+    the_file << arr;
+    the_file.close();
+    std::cout<<"The write operation happen." << std::endl<<std::endl;
+
+ ____________________________________________________________________
+// [+] file Read operation
+
+ void file_handle()  {
+    char arr[100];
+    std::ifstream obj("db.txt");
+    obj.getline(arr, 100);
+    std::cout << "the content in the file would be :"<< arr <<std::endl;
+    obj.close();
+    std::cout<<"Operation of the read performed"<< std:: endl;
+
+}
+
+ ____________________________________________________________________
+
+Every time when we write something on file it would be overwritten, If you want to append the file then simple open the file in append mode. 
+
+std::ofstream myfile("filename.extentioname", ios::app);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
