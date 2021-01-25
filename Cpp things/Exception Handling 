@@ -1,0 +1,16 @@
+1.	C++ exception handling is based on three keywords--> Try, Catch, and throw.
+
+2.	An exception is an unexpected problem that arises during the execution of a program.(Runtime)
+
+3.	Exceptional handeling mechanism provide a way to transfer control from one part of a program to another.
+This makes it easy to seprate the error of the program. 
+
+// BLOCKS 
+
+try: A block of of code which may cause an exception is typically placed inside of try block. It's followed bu one or more catch blocks. If an exception occurs, it is thrown from the try blocks. 
+
+catch: this block catches the exception thrown from the try block. Code to handle the exception is written inside this catch block. 
+
+throw : A program throws an exception when a program shows up. This is done using a throw keyword. 
+
+Every try catch should have a corresponding catch block. A single block can have multiple catch blocks.  
