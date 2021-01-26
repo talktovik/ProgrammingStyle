@@ -1,0 +1,9 @@
+1	Window already have a graphics API which is known as DIRECTX or DIRECT3D.
+
+2	So Windows only support opengl 1.1 which actually is supported as the rendering api via windows but our GPU manufactureres uses OPENGL API for thier RENDERING API
+
+3	It actually uses windows-32 API for windows. 
+
+4	we uses a library which is GLEW: THE OPENGL EXTENTION LIBRARY.
+
+5	There is a function which actually create Valid OpenGL rendering context and that is |glfwMakeCurrrentContext(Window)| and then after this you can call glewInit().
