@@ -1,0 +1,79 @@
+# passing array as parameter.
+# and functions returning array as return. 
+
+
+So consider we have a array in the main function and we want to pass the array so that we can do some sort of work.
+
+So lets say this is our main function.
+
+void main() {
+	int arr[] = {1,2,3,4,45,6,7}
+
+	//now we have to pass this arr to any function fun() , so to do that we can do something like: 
+
+	fun(arr,7);
+				// So we are passing which is a pnemonic and along with that we are passing the value or say holing capacity of the array which is 7 in this case.
+}
+
+so lets look like how this function would look like.
+
+
+void fun(int A[], int n ){
+	
+	// this would be the formal parameters would be which are actually intrest here. so as we know we are passing pnemonic and we are holding this pnemonic in the array A[] means we are telling our compiler that the passing entity is actually an array. 
+}
+
+another method. 
+
+void fun(int * p , int n ){
+	// since we are passing the pnemonic and we know that arr is just a address holding entity so what we can do is pass the value of that arr into a pointer to an integer and whenever we require we can do something like p[1] or something,
+
+}
+
+_______________________________
+Returning array as a parameter.
+-------------------------------
+
+see this code: 
+
+int [] fun(int n){   //clearly we can see that the return type is integer array. 
+	int *p ;
+	p = (int *)malloc(n * sizeof(int));
+	return (p);
+}
+
+int main() {
+	int * A; //decaring the pointer.
+	A = fun();
+
+}
+
+The function fun() actually returns an integer array which is created dynamically via malloc function.
+
+okay extended concept: 
+So 
+the first line of our function defination will saying something :
+
+
+int [] fun(int n);
+the return type clearly here is []. but what we can do here is we can also write something like :
+int * fun(int n);
+
+why ?? becuase the function fun is returning a pointer(p) right and according to pointer we know it can points to one or do some pointer airthematic and it would be pointing many.
+by returning would not be affected.
+
+
+In fact saying 
+int [] fun(int n); make more sense because it would be more readable, and helping.
+
+
+
+
+
+
+
+
+
+
+
+
