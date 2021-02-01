@@ -1,0 +1,64 @@
+passing structure as a parameter to any function.
+
+First I thought that this concept would be very difficult or might be there could be some dirty politics going on with the compiler but compiler is great guy and belive in simplicity. 
+
+well , structures are user defined data types means they are data types. that means you can pass them as you pass any other data type. 
+
+so what we can do is like for example we have 
+
+
+ int area(struct rectangle var1){
+	
+	return var1.h * var1.w;
+}
+
+
+struct rectange{
+	int h;
+	int w;
+
+}
+int main() {
+
+ struct rectange r1;  //declaration of the r1 
+	std::cout<< area(r1);	passing r1 to the function which is actually of type struct rectangle. 
+
+}
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CONCEPT : WE CAN ALSO PASS STRUCTURE AS PARAMETER AS CALL BY REFERENCE !
+
+this above example is clearly call by value.
+________________________________________________________________
+
+ int area(struct rectangle &var1){     //[the only different thing happen here !]
+	
+	return var1.h * var1.w;
+}
+
+
+struct rectange{
+	int h;
+	int w;
+
+}
+int main() {
+
+ struct rectange r1;  //declaration of the r1 
+	std::cout<< area(r1);	passing r1 to the function which is actually of type struct rectangle. 
+
+}
+
+
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ It can be done via call by address too 
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ And by the way C dont support call by Reference 
+ but C++ do support it.
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ ((((((((((((((((((((((((()))))))))))))))))))))))))
+ Okay so we can't pass array as call be value as parameter, but 
+ if the structre is having array inside it than we can pass it simply like that.
+ (means like passing via call by value.)
+ {{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}
