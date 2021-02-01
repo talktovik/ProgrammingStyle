@@ -1,0 +1,58 @@
+So pointer to structure is actually a pointer which is holding a starting address of an stucture. 
+So lets say we have a structure rectangle like that: 
+
+struct rectangle{
+	int breath;
+	int height;
+}
+
+now we have such defination of this struct let's declare it in our main.
+
+int main() {
+	struct rectangle r = {10,19};
+	//Now if we want a point which points to 'r' then we also need pointer of such kind right so in that case we would be needed with pointer of type [struct rectangle]
+	struct rectangle *p = &r;
+	now that means we have the same pointer and we are pointing to the starting address of r with the help of p.
+
+	{but how to access its members via pointers ??? }
+	I mean you can do with r like r.breath or e.height  !
+
+	but if you want to do via pointer then it would be like.
+
+	(*P).height or (*p).breath. 
+	but there is some shortcut also available for this structure as well
+
+	we can do something like 
+	p -> breath = 10; //rewriting
+	or like 
+	p -> height ;  
+
+}
+
+creating an object of type struct rectangle in the heap (dynamic memory location.)
+
+so first we require a pointer of that structure so that that can hold the pointer returned by the malloc function and even we have to typecast it accordingly. 
+
+
+struct rectangle * p ;
+
+p = (struct rectange *) malloc(sizeof(struct rectangle))
+
+why we are typecasting it ? because malloc returns a void pointer.
+and void pointer is generic pointer.and 
+furthermore we can assign the values like 
+ p -> height = 10;
+ p -> breath = 10;
+ and we could do everything we want.
+______________________________________________________
+ and anything created in stack is called static object 
+ amd anything created in heap is called dynamic object 
+ _____________________________________________________
+
+
+
+
+
+
+
+
