@@ -1,0 +1,70 @@
+So pointers are more useful than I thought they are, 
+I think without them life would be very very dificult. 
+infact, when I was learning this C# I find out that if you use the pointer in C# code then you have to mention that, this code is (UNSAFE).
+
+
+But in C and CPP its very important aspect, infact in modern programming pradigmn using pointers are actually very important. 
+and why it is ? 
+
+
++++++++++++++++++++++++
+Because pointers are the 
+only way we can use the HEAP 
+memory in our program and all the 
+dynamic created data structures are made in 
+Heap so actually we need pointers to access them.
+
+________________________
+
+Infact anything outside from our porgram like(apart from that code section and stack allocation) everything is not avialable to our program like how would you access any hardware/keyboard/internet and all such things are used in the program via pointers in some means. 
+
+So do you now think pointer is powerful or not ? 
+
+Yeah it is hell powerful.
+
+let say we have a variable int a = 10; variable initialization
+int *p ;  // this is pointer declaring 
+p = &a; //initialization 
+
+printf("%d", *p); // derefrencing
+
+okay so whenever you declare anything like variable or stuff it would be inside of stack for example if you declare any pointer then that pointer would be residing in the memory of stack in the program.(runtime analysis we are doing here.)
+
+let say if we want to allocate a array or anything on the heap so if you want to declare something on heap then you have to use the function malloc() in C which is inside of #include<stdlib.h> library.
+
+
+so now lets use this...
+
+#include<stdlib.h>
+int main(){
+	
+	int *p ;
+	//so we defined a pointer because we know since we are dealing with the memory which is going to be //created in heap so we have to need pointes so we can access that. 
+
+	// now lets suppose we need a array of int who is having a size of holding 5 integers.
+
+	//so as we already know that we can use the concept of malloc in order to do that so 
+
+
+	//we can write
+
+	p =(int *) malloc(5 * sizeof(int))
+
+	//okay what is (int *) : so the malloc normally return void pointer after successfully creating the //memory and returns a pointer so that you can use the first element of the data structure you created. 
+	but since malloc() returns a void pointer so we just type casted it so we can store that pointer in our pointer p which is a integer pointer.
+}
+
+and in C++ its pretty easy, 
+you can create such thing by using the "new" keyword.
+
+int *p;
+p = new int[5];
+
+where please note that p is a pointer.
+
+so now pointers are used to create heap memory.
+
+
+
+
+
