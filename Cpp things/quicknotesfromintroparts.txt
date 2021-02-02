@@ -1,0 +1,84 @@
+There are two types of data structures:
+
+first : Physical Data Structures 
+Second : Logical Data Structures
+
+Physical Data Structures
+------------------------
+the data structure which comes in this category is ARRAY and LINKED LIST
+because we have to store data in memory like that only.
+
+Now lets deep dive to the fact that a program only have two type of memory which is heap and stack.
+stack is responsible for static memory allocation hence array comes into it. Means when you know the amount of
+data you are dealing with then you can define array which is going to be created inn stack.
+
+when you want to create the data structure dynamically beacuse you don't know with how much data you are dealing
+with then you need to have heap memory and remember that heap memory of the portion of the program is only 
+accessed via pointers like 
+int * p = (int *)malloc(1* sizeof(int));
+
+so these are the significance of physical data structures.
+
+Logical Data Structures
+-----------------------
+The logical data structures are actually those data structures which are made by these physical data 
+structures just to do any specific task. 
+Like Logical data structures are: Stack, Queues,trees, Graphs, Hash Tables.
+These data structures are actually made by physical data structures and theya are created for certain task to
+handle diffrent requirement of insertion, deletion and updation so there are certain values you could have think 
+and then go for such data structures.
+
+
+
+
+ADT(abstract Data Type)
+-----------------------
+So this term is evolved when we start using object oriented programming in software development.
+Since We know that an int which is a primitive data type. having a byte for keep track of sign bit and we can 
+perform various mathematical operations on that as well. But in binaries we don't know how these 
+addition substraction is happening on the data structure(int) this is abstraction for us.
+
+
+see the point of understanding this concept is since in object oriented programming we can create the data 
+type according to our own so we can make that data type abstract means you can use the data type but you won't
+know the internal functionality of the the data type. 
+
+BTW we call class a user defined data type in case if you forget that.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
