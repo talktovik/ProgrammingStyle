@@ -1,0 +1,20 @@
+What actually important for recursion.
+# tracing recursion 
+# Stack used in recursion 
+# Recurrence Relation
+___________________________________
+
+Why recursion is more powerful than normal loops because a recursion have 2 phases(assending and decending phase.)
+
+lets see this snippit !
+
+1 void fun(int n){
+2 if(n > 0){
+3 print('something');
+4 fun(n-1)
+5 print(somethinh here! )
+}
+}
+so here line no 3 will execute before next recursion call. and 5 will happen when the control return to this function. and if on line 
+number 4 we had something like a = fun(n-1) *2 then it would be executed at returning means when the return control would come then 
+it would return.
