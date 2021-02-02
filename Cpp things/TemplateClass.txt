@@ -1,0 +1,96 @@
+So Template Class is like same as the class but the only difference would be they are generic classes.
+Okay let say we have a class that is dealing with integer values for example...
+
+
+class Arithametic{
+private:
+	int a ;
+	int b ;	
+public:
+	Arithametic(int i, int b);
+	int add();
+	int sub();
+
+};
+and its functions can be defined would be like 
+Arithmetic::Arithametic(int a, int b){
+this -> a = a ;
+this -> b = b ;
+}
+
+Like that we have more function declarations now since our  class in entirely based on int data type what 
+could happen if we need same functionality for float data type or long data type ??
+
+In that case these templates comes handy. So it is like behaving like generic data type, means the class
+you want to work in different data type would work like that. 
+
+You just have to change certain things.
+
+
+template<class T>
+class Arithametic{
+private:
+	T a ;  // now these data members are genric actually
+	T b ;	// now these data members are genric actually
+public:
+	Arithametic(T a, T b); // change the parameters as well
+	T add();		// and also change the return type of such functions
+	T sub();
+
+};
+
+now since the class is of template and thus function should also become template.
+
+template <class T>
+Arithametic<T>::Arithametic(T a, T b ){   //See before the scope resolution operator we have to write <T>
+
+this ->a = a ;
+this -> b = b ;
+}
+
+template <class T>
+T Arithametic<t>::add(){
+T c;
+c = a+b ;
+return c;
+
+}
+
+
+// Now calling our main function via main function.
+
+int main() {
+Airthametic<int> ar(10,6); // creating an object of class Airthametic which can use (int) values and get initialised with (10,6)
+cout << ar.add();
+
+Airthametic<float> ar1(1.8f,1.2f)
+cout<< ar1.add();
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
