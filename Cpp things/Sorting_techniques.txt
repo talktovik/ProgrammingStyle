@@ -29,3 +29,49 @@ Bucket/Bin Sort 	| Index Based Sort complexity of these three is O(n)
 Radix sort		| But they consume more space
 _________________________________________________________________________________________________________
 Bubble sort 
+
+So consider we have "m" elements so passes required : m-1
+Pass is something when you traverse the entire array and sort one element. 
+Comparisons required = "O(n^2)"
+Swaps Required = "O(n^2)"
++---------------------------------------------------------------------------------------------------+
+| so Bubble sort have a feature if you do 1 pass then you get the largest element of the array,for  |  
+| example if you need K biggest element in the array then run bubble sort for 3 times.              |
++---------------------------------------------------------------------------------------------------+  
+Adaptive ?  ->  You can make it adaptive by doing some modifications.
+well look the code we have written in the MydataStrc._andAlgorithms! Just feel and this is simple.
+
+So minimum time for bubble sort = O(n){
+in case of already sorted list, then also one pass would be there.
+}
+and Maximum time required is O(n^2)
+
+Stable ? -> Yeah it is stable! because think like we are only doing swapping if a[j] > a[j+1] and we are 
+not writing a[j] >= a[j+1] so it will take care of already sorted things !
+
+_________________________________________________________________________________________________________
+Insertion Sort
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
