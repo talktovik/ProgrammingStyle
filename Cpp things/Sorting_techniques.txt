@@ -1,0 +1,31 @@
+Criteria for Analysis
+# Number of Comparisons 
+	(the number of comparisions actually tells us the complexity the algorithm should have.)
+# Number of swaps 
+	(In order to maintain the order, how many swaps could be required.)
+# Adaptive 
+	(Like whatif we are trying to put elements in incresing order but they are already in 
+	increasing order.)
+# Stable 
+	( if the sorting algorithm is preserving the order of duplicate elements in the sorted list then that 
+algorithmn is called stable. Such stable algorithms are used in databases. )
+# Extra Memory 
+	(some requires extra memory in order to do sorting.)
+
+Some Sorting Algorithms::
+
+Bubble sort             |	{
+Insertion Sort		|	{ complexity O(n^2)
+Selection sort 		|	{
+			|
+Heap Sort 	  	|	{
+Merge Sort 		| 	{			These are Comprasion based sorts
+Quick Sort 		|	{complexity O(nlogn)
+Tree Sort		|	{Complexity of shell sort is O(n^3/2)
+Shell Sort 		|
+
+Count sort		|
+Bucket/Bin Sort 	| Index Based Sort complexity of these three is O(n)
+Radix sort		| But they consume more space
+_________________________________________________________________________________________________________
+Bubble sort 
