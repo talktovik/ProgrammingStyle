@@ -50,7 +50,25 @@ Stable ? -> Yeah it is stable! because think like we are only doing swapping if 
 not writing a[j] >= a[j+1] so it will take care of already sorted things !
 
 _________________________________________________________________________________________________________
-Insertion Sort
+Insertion Sort:
+It is based on the card game sorting.
+Here we have the concept of Shifting. Shift the element untill you found the right place.The Soul of insertion sort is
+based on consider we have a slready sorted list/array and we want to insert an element in that sorted array/list and 
+also have to put that element in that sorted position.
+Lets thing the array is aleady sorted and the last element is bigger than the element so what we can do is shift the 
+element into and make room for the new element and compare it with next element with the array.
+[This all comes under the insert logic which Insertion sort uses]
+
+Okay so lets say we have an array like [8,5,7,3,2] and we want to perform insertion sort on this. SO what we can do 
+is we can choose the first element like [8 | 5 7 3 2 ] and consider this list like two list the list on the left side 
+is sorted and the list on the other side is unsorted. we just have to take one element from this unsorted list and insert
+it into sorted list.
+The insertion sort is basically uses {swap and comparision}. 
+Now Facts about Insertion sort:
+First: It is having the time complexity of O(n^2).
+__________________________________________________________________________________________________________
+Selection Sort:
+
 
 
 
