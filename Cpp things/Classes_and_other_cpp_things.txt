@@ -1,0 +1,20 @@
+#nEnCapsulation : In normal terms Encapsulation
+ is defined as wrapping up of data and information under a single unit.
+In C++ encapsulation can be implemented using Class and access modifiers
+
+# Polymorphism: This actually means "One interface and multiple Methods". In fact 
+the word polymorphism means many forms. A real life example would be a man can have 
+several characters like he might be father,child, uncle and assassin at the same 
+time. 
+# C++ polymorphism is divided into 2 types:
+	Compile time polymorphism
+	-> Function overloading 
+	-> Operator overloading 
+	Runtime Polymorphism
+	-> Virtual Functions(Function Overriding)
+	Function overriding on the other hand occurs when a derived class has a definition
+	for one of the member functions of the base class. That base function is said to
+	 be overridden.
+
+
+
